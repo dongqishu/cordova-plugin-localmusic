@@ -1,9 +1,9 @@
 # cordova-plugin-localmusic
 
-参考
+## 参考
 https://github.com/jasminpethani/cordova-plugin-musicplayer
 
-作用
+## 作用
 扫描本地的音乐文件，有三个方法，分别是：1. 获取所有音乐列表。 2.获取专辑列表。 3.获取歌手列表。
 
 需要与插件cordova-plugin-android-permissions配合使用，原因如下：
@@ -14,8 +14,9 @@ For old Android plugins you (developers) are using may not support this new mech
 
 As a convenience we support browser and iOS platforms as well. But this plugin will simple reply that any permission checked of requested was granted.
 
-使用示例：
-
+## 使用示例
+<pre>
+    <code>
 var playList = [];
 var that = this;
 var permissions = cordova.plugins.permissions;
@@ -68,6 +69,9 @@ var permissions = cordova.plugins.permissions;
       },
       function(error) {}
     );
+    </code>
+</pre>
+
 
 
 cordova plugin retrieve local music
